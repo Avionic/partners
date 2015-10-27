@@ -222,9 +222,9 @@
     $("#contactform").submit(function () {
         var name = $("#name").val();
         var email = $("#email").val();
-        var subject = "Inbound Sales Website lead";
+        var subject = $("#subject").val();
         var message = $("#message").val();
-        var dataString = 'name=' + name + '&email=' + email + '&subject=' + subject + '&message=' + message;
+        var htmlMessage = 'Name: ' + name + '<br />Email: ' + email + '<br />Subject: ' + subject + '<br />Message: ' + message;
 
         if (name === '' || !IsEmail(email) || subject === '' || message === '') {
             $('#valid-issue').html('Please Provide Valid Information').show();
@@ -244,8 +244,8 @@
         	          }
         	        ],
         	      'autotext': 'true',
-        	      'subject': subject,
-        	      'html': message
+        	      'subject': "Inbound Sales Website lead",
+        	      'html': htmlMessage
         	    }
         	  }
         	 }).done(function(response) {
