@@ -37,7 +37,7 @@ body {
 	line-height:28px;
 	color:#585f61;
 	font-weight:400;
-	
+
 }
 
 h1{
@@ -86,7 +86,7 @@ h1, h2, h3, h4, h5, h6 {
 	display:table;
 	margin-left:auto;
 	margin-right:auto;
-	
+
 }
 .carousel-nav a{
 	text-decoration:none;
@@ -217,7 +217,7 @@ ul.navbar-nav {
 	background: #2d3538;
 	min-width: 140px;
 	top:95%;
-	padding:0;	
+	padding:0;
 }
 
 .navbar-default ul.dropdown-menu li a {
@@ -288,7 +288,7 @@ a.navbar-brand img{
 .dropdown-menu a:focus,
 .dropdown-menu li.active a:hover,
 .dropdown-menu li.active a:focus{
-	background:#1EACE3 !important; 
+	background:#1EACE3 !important;
 	color: #fff;
 }
 
@@ -396,7 +396,7 @@ a.navbar-brand img{
 
 .flex-control-paging li a.flex-active{
 	background:#1EACE3;
-	
+
 }
 
 .slider-wrapper:before{
@@ -463,11 +463,11 @@ a.navbar-brand img{
 	border-radius:2px;
 	padding:18px 26px 28px 26px;
 	position:relative;
-	width:265px;
-	min-height:375px;
-	margin-right:20px;
+	/*width:265px;*/
+	min-height:318px;
+	/*margin-right:20px;*/
 	float:left;
-	margin-bottom:140px;
+	margin-bottom:20px;
 }
 .work-phase span {
 	display: block;
@@ -575,7 +575,7 @@ a.navbar-brand img{
 	position:relative;
 	background:#f4fbfd;
 	padding-top:45px;
-	
+
 }
 
 
@@ -716,7 +716,7 @@ ul#Grid{
 	height:43px;
 	width:43px;
 	text-align:center;
-	
+
 }
 .folio-nav li #folio-close{
 	border-left:1px solid #dde4e6;
@@ -764,7 +764,7 @@ ul#Grid{
 	line-height:18px;
 	text-transform:uppercase;
 	color:#fff;
-	
+
 }
 .project .hover p{
 	font-size:13px;
@@ -784,7 +784,7 @@ ul#Grid{
 	text-align:center;
 	font-size:25px;
 	line-height:37px;
-	
+
 }
 .project .hover {
 	background: #2d3538;
@@ -967,7 +967,7 @@ ul#Grid{
 	margin-bottom:30px;
 }
 .related-projects{
-	
+
 }
 .related-projects .project{
 	opacity:1;
@@ -1611,7 +1611,7 @@ ul#Grid{
 }
 
 .comment-form h2{
-	
+
 }
 
 .comment-form input,.comment-form textarea{
@@ -1626,7 +1626,7 @@ ul#Grid{
 	width:100%;
 	padding-left:20px;
 	margin-top:20px;
-	
+
 }
 .comment-form textarea{
 	height:210px;
@@ -1790,7 +1790,7 @@ ul#Grid{
 	position:relative;
 	border-radius:2px;
 	overflow:hidden;
-	
+
 }
 
 .blog-search input{
@@ -1845,7 +1845,7 @@ ul#Grid{
 	padding-bottom:20px;
 	border-bottom:1px solid #bdc3c7;
 	min-height:110px;
-	
+
 }
 
 .latest-post .recent-visual{
@@ -1958,7 +1958,7 @@ ul#Grid{
    =========================== */
 footer{
 	position:relative;
-	
+
 }
 #contact{
 	padding-top:75px;
@@ -2037,7 +2037,7 @@ footer{
 	background:#7252c4;
 	color:#fff;
 	border-bottom:3px solid #7252c4;
-	
+
 }
 
 
@@ -2132,7 +2132,7 @@ footer{
 	margin-top:-20px;
 	padding-bottom:40px;
 	border-radius:6px;
-	
+
 }
 .table-head{
 	position:relative;
@@ -2223,7 +2223,7 @@ footer{
 
 .layout1 .pricing-table:hover,.layout1 .pricing-table.premium{
 	background-color:#f6f8fa;
-	
+
 }
 
 
@@ -2298,7 +2298,7 @@ footer{
 	z-index:-5;
 	left:0;
 	content:'';
-	
+
 }
 .layout2 li:after{
 	opacity:0.8;
@@ -2313,7 +2313,7 @@ footer{
 	z-index:-1;
 	left:0;
 	content:'';
-	
+
 }
 .layout2 li span{
 	font-weight:100;
@@ -2387,8 +2387,8 @@ footer{
    ======================= */
     /*To change skin color, All you have to do is to change following color and thats it*/
   /*layout 1*/
-  
-  
+
+
 .layout1 .pricing-table:hover .btn,.layout1 .pricing-table:hover .table-head,
 .layout1 .pricing-table:hover .price-tag,
 .layout1 .pricing-table.premium .btn,.layout1 .pricing-table.premium .table-head,
@@ -2401,8 +2401,8 @@ footer{
 }
 
  /*layout 2*/
- 
- 
+
+
 .layout2 .pricing-table,.layout2 li:after{
 	background-color:#2d3538;	/*could be replaced by any desired color*/
 }
@@ -2448,7 +2448,7 @@ footer{
 
 
 }
- 
+
  @media (min-width: 981px) and (max-width: 1199px) {
 .work-phase .hover a{
 	padding:10px 20px;
@@ -2589,7 +2589,7 @@ ul.navbar-nav{
 	z-index:999;
 }
 }
- 
+
 /* Landscape phone to portrait tablet */
 @media (max-width: 787px) {
 
@@ -2659,13 +2659,13 @@ ul.navbar-nav{
 
 
 }
- 
+
 /* Landscape phones and down */
 @media (max-width: 500px) {
 
 .left-shadow{
 	display:none;
-}	
+}
 .author p, .comment p,.author h2,.comment.reply h2, .comment.reply h5, .comment.reply p, .comment.reply a, .comment.reply .date-stamp{
 	padding-left:0;
 }

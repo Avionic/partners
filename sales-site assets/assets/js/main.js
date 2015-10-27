@@ -3,7 +3,7 @@
 
     /*	Table OF Contents
 	==========================
-	
+
 	1-Navigation
 	2-Sticky
 	3-sliders
@@ -111,24 +111,24 @@
     3- sliders
     ===================*/
 
-    $('.about-wrapper').carouFredSel({
-        width: "100%",
-        circular: false,
-        infinite: false,
-        auto: false,
-        scroll: {
-            items: 1,
-            easing: "linear"
-        },
-        prev: {
-            button: "#phase-prev",
-            key: "left"
-        },
-        next: {
-            button: "#phase-next",
-            key: "right"
-        }
-    });
+    // $('.about-wrapper').carouFredSel({
+    //     width: "100%",
+    //     circular: false,
+    //     infinite: false,
+    //     auto: false,
+    //     scroll: {
+    //         items: 1,
+    //         easing: "linear"
+    //     },
+    //     prev: {
+    //         button: "#phase-prev",
+    //         key: "left"
+    //     },
+    //     next: {
+    //         button: "#phase-next",
+    //         key: "right"
+    //     }
+    // });
 
     $('.team-wrapper').carouFredSel({
         width: "100%",
@@ -276,8 +276,8 @@
         $('.flip-container').removeClass('hover');
         $(this).addClass('hover');
     });
-	
-	
+
+
 
 
     $('.record').bind('inview', function (event, visible) {
@@ -318,8 +318,8 @@
         }
     }
 
-    
-	
+
+
 	/*============Ajax===============*/
 	 var active, next_project, prev_project,
         target, hash, url, page, projectIndex,
@@ -406,7 +406,7 @@
                     $('#ajaxpage').waitForImages(function () {
                         loader.delay(300).fadeOut(function () {
 							showProject();
-							
+
                         });
                     });
                 }
@@ -475,7 +475,7 @@
         }
         active.removeClass('active');
         next_project.addClass('active');
-		
+
     });
     $('#folio-prev').on('click', function () {
         active = xv_projects.find('.ajax-project.active');
@@ -487,7 +487,7 @@
         }
         active.removeClass('active');
         prev_project.addClass('active');
-		
+
     });
     $('#folio-close').on('click', function () {
         var xv_loader = $('.ajax-action').children('.ajax-loader');
@@ -495,12 +495,12 @@
         xv_loader.fadeOut();
         return false;
     });
-	
+
 	$('.carousel').carousel();
-	
-	
-	
-	
+
+
+
+
 	/*================================
 	9-Google Maps
 	================================*/
