@@ -222,22 +222,46 @@
     $("#contactform").submit(function () {
         var name = $("#name").val();
         var email = $("#email").val();
-        var subject = $("#subject").val();
+        var subject = "Inbound Sales Website lead";
         var message = $("#message").val();
         var dataString = 'name=' + name + '&email=' + email + '&subject=' + subject + '&message=' + message;
 
         if (name === '' || !IsEmail(email) || subject === '' || message === '') {
             $('#valid-issue').html('Please Provide Valid Information').show();
         } else {
-            $.ajax({
-                type: "POST",
-                url: "assets/php/submit.php",
-                data: dataString,
-                success: function () {
-                    $('#contactform').hide();
-                    $('#valid-issue').html('Your message has been sent,<BR> We will contact you back with in next 24 hours.').show();
-                }
-            });
+        	$.ajax({
+        	  type: "POST",
+        	  url: "https://mandrillapp.com/api/1.0/messages/send.json",
+        	  data: {
+        	    'key': 'wS-TM2VP1AzLbhQ8-x8q1Q',
+        	    'message': {
+        	      'from_email': email,
+        	      'to': [
+        	          {
+        	            'email': 'info@helloecholo.com',
+        	            'name': 'Sales Lead',
+        	            'type': 'to'
+        	          }
+        	        ],
+        	      'autotext': 'true',
+        	      'subject': subject,
+        	      'html': message
+        	    }
+        	  }
+        	 }).done(function(response) {
+        	   console.log(response); // if you're into that sorta thing
+        	   $('#valid-issue').html('Your message has been sent,<BR> We will contact you back shortly.').show();
+        	   $('#contactform').hide();
+        	 });
+            // $.ajax({
+            //     type: "POST",
+            //     url: "assets/php/submit.php",
+            //     data: dataString,
+            //     success: function () {
+            //         $('#contactform').hide();
+            //         $('#valid-issue').html('Your message has been sent,<BR> We will contact you back shortly.').show();
+            //     }
+            // });
         }
         return false;
     });
@@ -270,11 +294,15 @@
         $(this).children('span').removeClass('bounceInDown animated');
     });
 
-    $('.flip-container').eq(0).addClass('hover');
+    //$('.flip-container').eq(0).addClass('hover');
 
     $('.flip-container').hover(function () {
-        $('.flip-container').removeClass('hover');
+        //$('.flip-container').removeClass('hover');
         $(this).addClass('hover');
+    });
+
+    $('.flip-container').mouseleave(function () {
+    	$(this).removeClass('hover');
     });
 
 
